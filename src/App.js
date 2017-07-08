@@ -60,7 +60,7 @@ class App extends Component {
                           <div className="row main ">
                             <div className="col-md-4 col-sm-4">
                                 <div className="card" >
-                                  <img className="card-img-top img-fluid selfie" src="/photos/self.jpg" alt="self shot" />
+                                  <img className="card-img-top img-fluid selfie" src="/photos/me.jpg" alt="self shot" />
                                   <div className="card-block">
                                     <h2 className="card-title">Maxwell Benton</h2>
                                     <p className="card-text text-justify">&nbsp; &nbsp;I am a full stack web developer currently looking for opportunities in the tech industry. I have spent the last 4 years developing leaders and teams of 60-100, but found over the years that I love to code.</p>
