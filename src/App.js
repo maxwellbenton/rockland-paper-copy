@@ -58,7 +58,7 @@ class App extends Component {
              <Route exact path="/" render={() => {
                 return  <div>
                           <div className="row main ">
-                            <div className="col-md-4 col-sm-4">
+                            <div className="col">
                                 <div className="card" >
                                   <img className="selfie" src="/photos/me.jpg" alt="self shot" />
                                   <div className="card-block">
@@ -73,7 +73,7 @@ class App extends Component {
                                 </div>
                               
                             </div>
-                            <div className="col-md-8 col-sm-8">
+                            <div className="col">
                               <div className="curProject">
                                 <h4><em>Current Project</em></h4>
                                 <div className="card">
