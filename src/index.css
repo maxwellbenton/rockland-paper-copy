@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height:100%;
+  
+}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    text-decoration: none;
+  }
+
+.parallax {
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    background-image: url('/photos/england6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header {
+    background-color: #222;
+    color: #DDD;
+    padding: 0;
+    margin: 0;
+  }
+  .header a {
+    color: #DDD;
+    height: 100%;
+    margin: 0;
+  }
+  .projects {
+    margin: 0;
+    position: relative;
+    font-family: sans-serif;
+    height:100vh;
+    min-height: 300px;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .projectSlide {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .blog {
+    margin: 0;
+    position: relative;
+    font-family: sans-serif;
+    height:100vh;
+    min-height: 300px;
+    background-color: #555;
+  }
+@media (min-width: 1200px) { 
+  .main {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    height:100vh;
+    min-height: 300px;
+    
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) { 
+  .main {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+@media (max-width: 767px) { 
+  .main {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+@media (max-width: 480px) { 
+  .main {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+h3 {
+  margin: 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation ul li {
+    float: left;
+}
+
+.navigation ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    background-color: #111;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+}
+
+.card {
+  margin: 1vh;
+  padding: 0;
+  
+}
+.selfie {
+  margin: 0;
+  height: 40vh;
+  min-height: 250px;
+  padding-top: 1em;
+}
+.card-text {
+  padding: 1vh;
+}
+
+.curProject {
+  width: 100%;
+  margin-top: 10vh;
+}
+
