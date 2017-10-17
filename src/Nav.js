@@ -1,24 +1,21 @@
-import React, {Component} from 'react'
-import { Link } from 'react-router-dom'
+import { Menu } from 'semantic-ui-react'
+import React, { Component } from 'react';
 
-export default class NavBar extends Component {
+export default class MenuExampleInverted extends Component {
+  state = { activeItem: 'main' }
 
-render() {
-  // <li><Link to="/blog">Blog</Link></li>
-  // <li><Link to="/resume">Resume</Link></li>
-  //           <li><Link to="/cv">CV</Link></li>
-  //           <li><Link to="/contact">Contact</Link></li>
-  return (
-    <div className="navigation">
-        <ul>
-            <li><Link to="/">Maxwell Benton</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/resume">Resume</Link></li>
-            
-            
-        </ul>
-    </div>
-  )
-}
-  
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+  render() {
+    const { activeItem } = this.state
+
+    return (
+      <Menu inverted>
+        <Menu.Item name='Rockland Instant Copy' active={activeItem === 'main'} onClick={this.handleItemClick} />
+        <Menu.Item name='Services' active={activeItem === 'services'} onClick={this.handleItemClick} />
+        <Menu.Item name='Contact' active={activeItem === 'contact'} onClick={this.handleItemClick} />
+        <Menu.Item name='About' active={activeItem === 'about'} onClick={this.handleItemClick} />
+      </Menu>
+    )
+  }
 }
