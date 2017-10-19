@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Divider } from 'semantic-ui-react';
+import { Item, Container, Divider, Grid, Header } from 'semantic-ui-react';
 import Nav from './Nav'
 import Main from './Main'
 import Services from './Services'
@@ -11,16 +11,19 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <Container fluid>
+      <div>
         <Nav />
-        <Main />
-        <Divider horizontal />
-        <Services />
-        <Divider horizontal />
+        <Grid verticalAlign='middle'>  
+        <Main style={{height: '100vh'}}/>
+        <Services style={{minHeight: '100vh'}}/>
+        
+        <Divider section />
+        
         <Contact />
-        <Divider horizontal />
+        <Divider section />
         <About />
-      </Container>
+        </Grid>
+      </div>
     );
   }
 }

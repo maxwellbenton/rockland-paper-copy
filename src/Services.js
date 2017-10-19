@@ -1,6 +1,6 @@
 import React from 'react';
 import ServiceItem from './ServiceItem'
-import { Container, Grid, Card, Header } from 'semantic-ui-react'
+import { Container, Segment, Grid, Header } from 'semantic-ui-react'
 
 const serviceList = [
     {name: "Service 1", info: "Full service copying and more!", price: "$22.99 - $39.99", img: "https://static.theworks.co.uk/images/5015934049211_Z.jpg"},
@@ -9,14 +9,12 @@ const serviceList = [
 ]
 
 const Services = () => (
-    <Container>
-        <Header as= 'h2' textAlign='center'>Services</Header>
-        <Grid columns={3}>
-            <Grid.Row>
-                {serviceList.map(service => <ServiceItem {...service} />)}
-            </Grid.Row>
-        </Grid>
-    </Container>
+    
+    <Grid.Row columns={5} centered >
+        
+        {serviceList.map(service => <ServiceItem {...service} />)}
+        
+    </Grid.Row>
 )
   
 export default Services

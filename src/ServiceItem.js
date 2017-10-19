@@ -1,30 +1,29 @@
 import React from 'react';
-import { Container, Grid, Card, Icon, Image } from 'semantic-ui-react'
+import { Container, Grid, Card, Icon, Image, Segment, Header } from 'semantic-ui-react'
 
 const Services = (props) => (
     
-    <Grid.Column>
-        <Card>
+        <Grid.Column computer={5} tablet={10} mobile={10}>
+        <Segment>
         <Image src={props.img} fluid />
-        <Card.Content>
-        <Card.Header>
+        
+        <Header>
             {props.name}
-        </Card.Header>
-        <Card.Meta>
-            some extra info
-        </Card.Meta>
-        <Card.Description>
+        </Header>
+        
+        <p>
             {props.info}
-        </Card.Description>
-        </Card.Content>
-        <Card.Content extra>
+        </p>
+        
+        <p>
         
             <Icon name='arrow right' />
             {props.price}
         
-        </Card.Content>
-        </Card>
-    </Grid.Column>
+        </p>
+        </Segment>
+        </Grid.Column>
+    
 )
   
 export default Services
