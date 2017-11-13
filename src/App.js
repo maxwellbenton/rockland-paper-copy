@@ -12,9 +12,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav />
         <Grid verticalAlign='middle'>  
-        <Main style={{height: '100vh'}}/>
+        <Nav />
+        
+        <Main />
         <Services style={{minHeight: '100vh'}}/>
         
         <Divider section />

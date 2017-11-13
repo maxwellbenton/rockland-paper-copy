@@ -3,12 +3,11 @@ import { Container, Grid, Card, Icon, Image, Segment, Header } from 'semantic-ui
 
 const Services = (props) => (
     
-        <Grid.Column computer={5} tablet={10} mobile={10}>
+        <Grid.Column computer={5} tablet={14} mobile={16}>
         <Segment>
-        <Image src={props.img} fluid />
         
         <Header>
-            {props.name}
+        <Icon name='arrow right' />{props.name}
         </Header>
         
         <p>
@@ -17,8 +16,8 @@ const Services = (props) => (
         
         <p>
         
-            <Icon name='arrow right' />
-            {props.price}
+            
+            
         
         </p>
         </Segment>

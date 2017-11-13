@@ -3,10 +3,18 @@ import ServiceItem from './ServiceItem'
 import { Container, Segment, Grid, Header } from 'semantic-ui-react'
 
 const serviceList = [
-    {name: "Service 1", info: "Full service copying and more!", price: "$22.99 - $39.99", img: "https://static.theworks.co.uk/images/5015934049211_Z.jpg"},
-    {name: "Service 2", info: "Full service copying and more!", price: "$42.99 - $69.99", img: "https://static.theworks.co.uk/images/5015934049211_Z.jpg"},
-    {name: "Service 3", info: "Full service copying and more!", price: "$72.99 - $99.99", img: "https://static.theworks.co.uk/images/5015934049211_Z.jpg"}
-]
+    {name: "Printing", info: "Black and White copies as low as 2 cents and Color copies as low at 15 cents!", img: "https://static.theworks.co.uk/images/5015934049211_Z.jpg"},
+    {name: "Scanning", info: "Drowning in old files? Let us help you by scanning your paper files into searchable PDFs!", img: "https://static.theworks.co.uk/images/5015934049211_Z.jpg"},
+    {name: "Legal Copies", info: "Rockland Instant Copy was located across from the Rockland County courthouse for 35 and has always specialized in providing fast, high quality services for the printing and copying of legal documents.", img: "https://static.theworks.co.uk/images/5015934049211_Z.jpg"},
+    {name: "Booklets and Binding", info: ""},
+    {name: "Blue Prints", info: ""},
+    {name: "Business Cards", info: ""}
+] 
+
+
+
+
+ 
 
 const Services = () => (
     
