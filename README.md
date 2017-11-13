@@ -66,3 +66,4 @@ end
 This doesnt matter too much for a single user blog, but makes some data calls easier later on.  
 
 ###Setting up controller# react-blog
+# rockland-instant-copy
