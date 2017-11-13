@@ -67,3 +67,4 @@ This doesnt matter too much for a single user blog, but makes some data calls ea
 
 ###Setting up controller# react-blog
 # rockland-instant-copy
+# rockland-instant-copy
