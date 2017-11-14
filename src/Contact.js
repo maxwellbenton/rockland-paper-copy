@@ -1,9 +1,34 @@
 import React from 'react';
 import { Item, Container, Grid, Card, Header, Image, Input, Segment, Form, TextArea, Button  } from 'semantic-ui-react'
+import GoogleMapReact from 'google-map-react'
 
 const Contact = () => (
-    <Grid.Row centered style={{minHeight: '100vh'}}>        
-        <Grid.Column only="computer" computer={10} >
+   
+        
+
+<Grid.Row centered>
+<Grid.Column >
+    <Container text textAlign='center'>
+        <Segment style={{height: '100vh'}}>   
+          <Container textAlign='justified'>  
+              Contact Stuff
+              <GoogleMapReact style={{width: '50%', height: '100%'}}
+                apiKey={process.env.GOOGLE_} 
+                center={[41.142538, -73.987943]}
+                zoom={12}
+                
+              />
+          </Container>
+      </Segment>
+    </Container>
+</Grid.Column>
+
+</Grid.Row>
+  )
+  
+export default Contact
+
+{/* <Grid.Column only="computer" computer={10} >
         <Segment>          
         <Form>
           <Form.Field id='form-input-control-name' control={Input} label='Name' placeholder='Name' />
@@ -25,12 +50,4 @@ const Contact = () => (
           <Form.Field id='form-button-control' control={Button} content='Submit' />
         </Form> 
         </Segment>       
-        </Grid.Column>
-        <Grid.Column computer={6} tablet={10} mobile={10}>
-        <Image src="http://oiltankremovalrocklandcounty.com/images/Oil_Tank_Removals_Rockland_County.jpg" fluid/>    
-        </Grid.Column>
-        
-    </Grid.Row>
-  )
-  
-export default Contact
+        </Grid.Column> */}
